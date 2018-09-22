@@ -1,0 +1,23 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "4.a.e MongoDB Tutorial Milo MacPhail",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milomacphail/mongodbplaylist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milomacphail/mongodbplaylist/issues"
+  },
+  "homepage": "https://github.com/milomacphail/mongodbplaylist#readme",
+  "dependencies": {
+    "mongoose": "^5.2.17",
+    "nodemon": "^1.18.4"
+  }
+}

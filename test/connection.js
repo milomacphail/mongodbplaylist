@@ -15,3 +15,9 @@ before(function(done){
 });
 });
 
+//Drop the collection
+beforeEach(function(done){
+    mongoose.connection.collections.mariochars.drop(function(){
+        done();
+    });
+});

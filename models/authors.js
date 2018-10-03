@@ -6,13 +6,17 @@ mongoose.connect('mongodb://MiloMacPhail:Pandahead7!@ds153890.mlab.com:53890/mon
 
 //Create Schema and Model
 
-const MarioCharSchema = new Schema({
+const BookSchema = new Schema({
     name: String,
-    weight: Number
+    pages: Number,
 });
 
-const MarioChar = mongoose.model('mariochar', MarioCharSchema);
+const AuthorSchema = new Schema({
+    name: String,
+    age: Number,
+    books: [BookSchema]
+});
 
-module.exports = MarioChar;
+const Author = mongoose.model('authors', AuthorSchema);
 
-var myChar = new MarioChar({});
+module.exports = Author;
